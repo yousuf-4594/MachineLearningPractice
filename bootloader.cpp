@@ -2,8 +2,8 @@
 #include <cstdlib>
 
 int main() {
-    // Specify the full path to the Python executable
-    const char* command = "C:\\Python311\\python.exe GeometricAnalysis.py";
+    // Specify the full path to the Python script
+    const char* command = "C:\\Python311\\python.exe D:\\Creations\\GithubCommit\\Commit-Bot-main\\GeometricAnalysis.py";
 
     int returnCode = std::system(command);
 
@@ -18,4 +18,3 @@ int main() {
 
     return 0;
 }
-
