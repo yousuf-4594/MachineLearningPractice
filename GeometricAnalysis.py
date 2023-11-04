@@ -71,5 +71,23 @@ if (random() > NO_COMMIT_CHANCE):
         create_commit()
     system("git push")
     log(f"[{datetime.now()}] Sucessfully committed {commits} time(s).")
+    art = r'''
+            (\ __ /)
+                (UwU)
+        ＿ノ ヽ ノ＼＿
+        /   `/ ⌒Ｙ⌒ Ｙ   \
+    (   (三ヽ人   /     |
+    |   ノ⌒   \ ￣￣ヽ   ノ
+    ヽ＿＿＿＞､＿＿／
+            ｜( 王 ﾉ〈
+            /ﾐ`ー―彡\
+            |╰         ╯   |
+            |       /\       |
+            |      /  \      |
+            |    /     \     |
+    '''
+
+    print(art)
+
 else:
     log(f"[{datetime.now()}] No commits were made.")
