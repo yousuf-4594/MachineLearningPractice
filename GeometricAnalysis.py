@@ -83,7 +83,11 @@ def create_commit():
 
 # Execute the script.
 if (random() > NO_COMMIT_CHANCE):
+    CommitCountinput = int(input("Enter commit count: "))
     commits = randint(0, MAX_COMMITS)
+    if CommitCountinput != 0:
+        commits = CommitCountinput
+
     for i in range(commits):
         create_commit()
     system("git push")
