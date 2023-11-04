@@ -1,7 +1,11 @@
 ### Configuration
 # Logging Options
+
+import os
+
+
 LOG = True
-LOG_FILE = "GeometricAnalysis.log"
+LOG_FILE = os.path.join("D:\\Creations\\GithubCommit\\Commit-Bot-main", "GeometricAnalysis.log")
 
 # Commit Options
 NO_COMMIT_CHANCE = 0.1 # 10% chance of NOT committing to GitHub.
@@ -10,8 +14,11 @@ MAX_COMMITS = 80 # Maximum number of commits that can be made.
 # Cron job.
 #CRON_JOB_TIME = "0 12 * * *" # Every day at 12:00 pm.
 
+
 # Output File
-OUTPUT_FILE = "FactorAnalysis.txt"
+OUTPUT_FILE = os.path.join("D:\\Creations\\GithubCommit\\Commit-Bot-main", "FactorAnalysis.txt")
+
+
 
 # Imports
 from random import choice
@@ -20,7 +27,8 @@ from pathlib import Path
 from os import system # Executing the Git commands.
 from random import random, randint # Generating a random float between 0 and 1.
 from datetime import datetime # Date and time for our file.
-
+# Set the working directory to the directory where your Git repository is located
+os.chdir("D:\\Creations\\GithubCommit\\Commit-Bot-main")
 
 # # Check if a cronjob exists for this script, if not, create it using crontab.
 # system("crontab -l > cron.txt")
