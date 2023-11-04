@@ -1,8 +1,4 @@
-### Configuration
-# Logging Options
-
 import os
-
 
 LOG = True
 LOG_FILE = os.path.join("D:\\Creations\\GithubCommit\\Commit-Bot-main", "GeometricAnalysis.log")
@@ -11,11 +7,6 @@ LOG_FILE = os.path.join("D:\\Creations\\GithubCommit\\Commit-Bot-main", "Geometr
 NO_COMMIT_CHANCE = 0.1 # 10% chance of NOT committing to GitHub.
 MAX_COMMITS = 80 # Maximum number of commits that can be made.
 
-# Cron job.
-#CRON_JOB_TIME = "0 12 * * *" # Every day at 12:00 pm.
-
-
-# Output File
 OUTPUT_FILE = os.path.join("D:\\Creations\\GithubCommit\\Commit-Bot-main", "FactorAnalysis.txt")
 
 
@@ -30,18 +21,6 @@ from datetime import datetime # Date and time for our file.
 # Set the working directory to the directory where your Git repository is located
 os.chdir("D:\\Creations\\GithubCommit\\Commit-Bot-main")
 
-# # Check if a cronjob exists for this script, if not, create it using crontab.
-# system("crontab -l > cron.txt")
-# with open("cron.txt", "r") as f:
-#     if "commit_bot.py" not in f.read():
-#         with open("cron.txt", "a") as f:
-#             f.write(f"{CRON_JOB_TIME} cd {Path.cwd()} && python3 commit_bot.py\n")
-#             f.close()
-#             system("crontab cron.txt")
-#             system("rm -f cron.txt")
-#     else:
-#         f.close()
-#         system("rm -f cron.txt")
 
 # Logging.
 def log(message):
